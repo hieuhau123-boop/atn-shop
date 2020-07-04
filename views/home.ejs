@@ -1,0 +1,252 @@
+<%- include('partials/header') -%>
+
+<head>
+    <title>ATN Shop</title>
+    <style>
+        div{
+            margin: 5px;
+            
+        }
+        
+        *{
+            box-sizing: border-box;
+        }
+        
+        /*header*/
+        #header1{
+            text-align: right;
+            font-size: 1cm;
+        }
+        #search{
+            text-align: center;
+            ;
+        }
+
+        /* menu */
+        #menu ul{
+            list-style-type: none;
+            background: orangered;
+            text-align: center;
+        }
+
+        #menu ul li{
+            color: white;
+            display: inline-table;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            position: relative;
+        }
+
+        #menu ul li a {
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+
+        #menu ul li a:hover{
+            background: white;
+            color:black;
+        }
+
+        #menu ul li > .sub-menu{
+            display: none;
+            position: absolute;
+        }
+
+        #menu ul li:hover .sub-menu{
+            display: block;
+        }
+
+        /* content */
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #main-content:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        #left-content{
+            float: left;
+            width: 33%;
+            background: honeydew;
+        }
+        #right-content {
+            float: left;
+            width: 33%;
+            background: honeydew;
+        }
+
+        #center-content{
+            float: left;
+            width: 32%;
+            background: honeydew;
+        }
+
+        /* footer */
+        .footer{
+            background: lightslategrey;
+            color: wheat;
+            height: 500px;
+            position: relative;
+        }
+        
+        .footer .footer-content{
+            height: 328px;
+            display: flex;
+        }
+        
+        .footer .footer-content .footer-section{
+            flex: 1;
+            padding: 25px;
+        }
+        
+        .footer .footer-content h1,
+        .footer .footer-content h2{
+            color: white;
+        }
+
+        .footer .footer-content .about h1 span{
+            color:blue;
+        }
+
+.footer .footer-content .about p{
+font-size: 1.8em;
+color: white;
+}
+
+.footer .footer-content .about .contact span{
+display: block;
+color: white;
+font-size: 1.3em;
+margin-bottom: 8px;
+}
+
+.footer .footer-content .links ul a{
+display: block;
+color: white;
+list-style-type: none;
+text-decoration: none;
+margin-bottom: 10px;
+font-size: 1.2em;
+transition: all .3s;
+}
+
+
+.footer .footer-content .links ul a:hover{
+color: white;
+margin-left: 15px;
+transition: all .3s;
+}
+
+.footer .footer-content .contact-form .contact-input{
+background: white;
+color: black;
+margin-bottom: 10px;
+line-height: 1.5rem;
+padding: .9rem 1.4rem;
+border: none;
+}
+
+.footer .footer-content .contact-form .contact-input:focus{
+background: lightsteelblue;
+}
+
+.footer .footer-bottom{
+background:lightslategrey;
+color:black;
+height: 50px;
+width: 1850px;
+text-align: center;
+position: absolute;
+bottom: 0px;
+left: 0px;
+padding-top: 20px;
+}
+
+.btn-big{
+padding: .7rem 1.3rem;
+line-height: 1.3rem;
+}
+
+.footer .footer-content .contact-form .contact-btn{
+float: right  ;
+}
+
+.icon{
+list-style-type: none;
+}
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!--menu-->
+    <div id="menu">
+        <ul>
+            <a href="https://atn-shop-hau.herokuapp.com/login">Log In</a>
+            <li><a href="https://atn-shop-hau.herokuapp.com/">Home</a></li>
+            <li><a href="https://atn-shop-hau.herokuapp.com/products">Products</a></li>
+            <!--<li><a href="#">PC</a>
+                <ul class="sub-menu">
+                    <li><a href="pages/PC/PC Gaming.html">PC Gaming</a></li>
+                    <li><a href="pages/PC/PC Office.html">PC Office</a></li>
+                    <li><a href="pages/PC/PC Worktation.html">PC Worktation</a></li>
+                </ul>
+            </li>-->
+            <li><a href="https://atn-shop-hau.herokuapp.com/staffs">Staffs</a></li>
+            <!--<li><a href="#">Gear</a>
+                <ul class="sub-menu">
+                    <li><a href="pages/Gear/Headphones.html">Headphones</a></li>
+                    <li><a href="pages/Gear/Keyboards.html">Keyboards</a></li>
+                    <li><a href="pages/Gear/Mouses.html">Mouses</a></li>
+                </ul>
+            </li>-->
+            <li><a href="https://atn-shop-hau.herokuapp.com/order">Order</a></li>
+        </ul>
+    </div>
+
+    <!--content-->
+    <p></p>
+    <div class="alert alert-primary" role="alert"><center><h3>Best Seller</h3></center>
+    <div id="main-content">
+        
+        <div id="left-content">
+            
+            <div class="product">
+                <center><img src="images/masoi.jpg" alt="" width = "525x">
+                <h3 class="product_name">Board Game Ma Sói</h3>
+                <p class="product_price"> Price: 1000000</p></center>
+            </div>
+        </div>
+        <div id="center-content">
+            
+            <div class="product">
+                <center><img src="images/meono.jpg" alt="" width="525px">
+                <h3 class="product_name">Board Game Mèo Nổ</h3>
+                <p class="product_price">Price: 1500000</p> </center>
+            </div>
+        </div>
+
+        <div id="right-content">
+            
+            <div class="product">
+                <center><img src="images/monopoly.jpg" alt="" width="525px" height="525px">
+                <h3 class="product_name">Board Game Monopoly </h3>
+                <p class="product_price">Price: 1000000</p> </center>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+
+<%- include('partials/footer') -%>
